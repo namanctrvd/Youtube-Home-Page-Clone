@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YouTube.com Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/video.css">
+  <link rel="stylesheet" href="static/css/sidebar.css">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="static/img/icons/hamburger-menu.svg">
+
+      <!--
+      <img class="youtube-logo" src="static/img/icons/youtube-logo.svg">
+
+      -->
+
+      <div class="youtube-logo-icon-container">
+        <img class="youtube-logo" src="static/img/icons/youtube-logo.svg">
+        <div class="country-tag">IN</div>
+      </div>
+
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="static/img/icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <!-- Put position absolute inside position relative -->
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="static/img/icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="static/img/icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="static/img/icons/youtube-apps.svg">
+        <div class="tooltip">Youtube Apps</div>
+      </div>
+
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="static/img/icons/notifications.svg">
+        <div class="notifications-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+
+      <img class="current-user-picture" src="static/img/profile/current-user.jpeg">
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="static/img/icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="static/img/icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="static/img/icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="static/img/icons/shorts.png">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="static/img/icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+
+<!-- first block of 8 videos-->
+
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-1.webp">
+          <div class="video-time">3:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-1.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Longboarders vs Cyclist - Who's Faster?
+            </p>
+            <p class="video-author">
+              Josh Neuman
+            </p>
+            <p class="video-stats">
+              6.4M views &#183; 11 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-2.webp">
+          <div class="video-time">5:28</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              This Vegas Flash Mob Has An Emotional Ending!
+            </p>
+            <p class="video-author">
+              This Magic Moment
+            </p>
+            <p class="video-stats">
+              94k views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-3.webp">
+          <div class="video-time">4:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-3.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              4 New Things Added - New In Laravel 9.13.0
+            </p>
+            <p class="video-author">
+              Laratips
+            </p>
+            <p class="video-stats">
+              517 views &#183; 1 day ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-4.webp">
+          <div class="video-time">1:01:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-4.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              lofi hip hop radio - beats to relax/study to
+            </p>
+            <p class="video-author">
+              Lofi Girl
+            </p>
+            <p class="video-stats">
+              1.1M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-5.webp">
+          <div class="video-time">11:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-5.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Madison Beer's One of a Kind Met Gala Dress | Met Gala 2021 With Emma Chamberlain | Vogue
+            </p>
+            <p class="video-author">
+              Vogue
+            </p>
+            <p class="video-stats">
+              4.4M views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-6.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-6.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Solidity, Blockchain, and Smart Contract Course – Beginner to Expert Python Tutorial
+            </p>
+            <p class="video-author">
+              freeCodeCamp.org
+            </p>
+            <p class="video-stats">
+              2.4M views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-7.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-7.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Coke Studio | Season 14 | Pasoori | Ali Sethi x Shae Gill
+            </p>
+            <p class="video-author">
+              Coke Studio
+            </p>
+            <p class="video-stats">
+              142M views &#183; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-8.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-8.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Otis and Ruby || I Like Me Better
+            </p>
+            <p class="video-author">
+              TeenFlix
+            </p>
+            <p class="video-stats">
+              1.9M views &#183; 7 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!-- second block of 8 videos-->
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-1.webp">
+          <div class="video-time">3:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-1.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Longboarders vs Cyclist - Who's Faster?
+            </p>
+            <p class="video-author">
+              Josh Neuman
+            </p>
+            <p class="video-stats">
+              6.4M views &#183; 11 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-2.webp">
+          <div class="video-time">5:28</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              This Vegas Flash Mob Has An Emotional Ending!
+            </p>
+            <p class="video-author">
+              This Magic Moment
+            </p>
+            <p class="video-stats">
+              94k views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-3.webp">
+          <div class="video-time">4:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-3.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              4 New Things Added - New In Laravel 9.13.0
+            </p>
+            <p class="video-author">
+              Laratips
+            </p>
+            <p class="video-stats">
+              517 views &#183; 1 day ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-4.webp">
+          <div class="video-time">1:01:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-4.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              lofi hip hop radio - beats to relax/study to
+            </p>
+            <p class="video-author">
+              Lofi Girl
+            </p>
+            <p class="video-stats">
+              1.1M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-5.webp">
+          <div class="video-time">11:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-5.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Madison Beer's One of a Kind Met Gala Dress | Met Gala 2021 With Emma Chamberlain | Vogue
+            </p>
+            <p class="video-author">
+              Vogue
+            </p>
+            <p class="video-stats">
+              4.4M views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-6.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-6.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Solidity, Blockchain, and Smart Contract Course – Beginner to Expert Python Tutorial
+            </p>
+            <p class="video-author">
+              freeCodeCamp.org
+            </p>
+            <p class="video-stats">
+              2.4M views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-7.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-7.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Coke Studio | Season 14 | Pasoori | Ali Sethi x Shae Gill
+            </p>
+            <p class="video-author">
+              Coke Studio
+            </p>
+            <p class="video-stats">
+              142M views &#183; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-8.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-8.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Otis and Ruby || I Like Me Better
+            </p>
+            <p class="video-author">
+              TeenFlix
+            </p>
+            <p class="video-stats">
+              1.9M views &#183; 7 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!-- first block of 8 videos-->      
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-1.webp">
+          <div class="video-time">3:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-1.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Longboarders vs Cyclist - Who's Faster?
+            </p>
+            <p class="video-author">
+              Josh Neuman
+            </p>
+            <p class="video-stats">
+              6.4M views &#183; 11 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-2.webp">
+          <div class="video-time">5:28</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              This Vegas Flash Mob Has An Emotional Ending!
+            </p>
+            <p class="video-author">
+              This Magic Moment
+            </p>
+            <p class="video-stats">
+              94k views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-3.webp">
+          <div class="video-time">4:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-3.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              4 New Things Added - New In Laravel 9.13.0
+            </p>
+            <p class="video-author">
+              Laratips
+            </p>
+            <p class="video-stats">
+              517 views &#183; 1 day ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-4.webp">
+          <div class="video-time">1:01:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-4.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              lofi hip hop radio - beats to relax/study to
+            </p>
+            <p class="video-author">
+              Lofi Girl
+            </p>
+            <p class="video-stats">
+              1.1M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-5.webp">
+          <div class="video-time">11:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-5.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Madison Beer's One of a Kind Met Gala Dress | Met Gala 2021 With Emma Chamberlain | Vogue
+            </p>
+            <p class="video-author">
+              Vogue
+            </p>
+            <p class="video-stats">
+              4.4M views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-6.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-6.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Solidity, Blockchain, and Smart Contract Course – Beginner to Expert Python Tutorial
+            </p>
+            <p class="video-author">
+              freeCodeCamp.org
+            </p>
+            <p class="video-stats">
+              2.4M views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-7.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-7.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Coke Studio | Season 14 | Pasoori | Ali Sethi x Shae Gill
+            </p>
+            <p class="video-author">
+              Coke Studio
+            </p>
+            <p class="video-stats">
+              142M views &#183; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="static/img/thumbnail/thumbnail-8.webp">
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="static/img/profile/profile-8.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Otis and Ruby || I Like Me Better
+            </p>
+            <p class="video-author">
+              TeenFlix
+            </p>
+            <p class="video-stats">
+              1.9M views &#183; 7 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
